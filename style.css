@@ -1,0 +1,17 @@
+p{
+	color:green;
+	font-size:22px;
+}
+
+
+.myStyle{
+	color:pink;
+	font-size:20px;
+	font-weight: bold;
+}
+
+#myId{
+    color:brown;
+    font-size:25px;
+    font-weight: bold;
+}
