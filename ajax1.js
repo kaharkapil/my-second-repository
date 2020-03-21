@@ -13,10 +13,10 @@ let getAllData=()=> {
 				console.log(data);
 				let allPeople=data.people
 
-		    	for(person of allPeople){
+		    	for(people of allPeople){
 		    		let tempRow=  `<div class="row">
-		    	                   <div class="col">${person.name}</div>
-		    	                   <div class="col"> ${person.craft}</div>
+		    	                   <div class="col">${people.name}</div>
+		    	                   <div class="col"> ${people.craft}</div>
 		    	                   </div>`
 		    	
 		    $(".showData").append(tempRow);
