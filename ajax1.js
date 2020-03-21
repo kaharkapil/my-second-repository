@@ -8,7 +8,7 @@ let getAllData=()=> {
 	$.ajax({
 			type:'GET',
 			dataType:'json',
-			url:'ajax1.json',
+			url:'https://kaharkapil.github.io/ajax1.json',
 			success:(data)=>{
 				console.log(data);
 				let allPeople=data.people
@@ -19,7 +19,7 @@ let getAllData=()=> {
 		    	                   <div class="col"> ${person.craft}</div>
 		    	                   </div>`
 		    	
-		    $("showData").append(tempRow);
+		    $(".showData").append(tempRow);
 		    }  // End of for loop
 	        }, ///End of succes
 		    error: (data)=>{
