@@ -4,15 +4,15 @@
 	"people":[
 	{
 	     "name":"kapil Kahar",
-	     "craft":ISS
+	     "craft":"ISS"
 	},
 	{
 	     "name":"Sumit Kahar",
-	     "craft":ISS
+	     "craft":"ISS"
 
 	},
 	{
 	     "name":"Nayan Dhakad",
-	     "craft":ISS
+	     "craft":"ISS"
 	}]
 }

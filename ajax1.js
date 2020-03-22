@@ -4,26 +4,29 @@ $(document).ready(()=>{
 });
 
 let getAllData=()=> {
-	console.log("making request")
-	$.ajax({
+	console.log("making request");
+	$.ajax( {
+
 			type:'GET',
 			dataType:'json',
-			url:'https://kaharkapil.github.io/ajax1.json',
+			async:true,
+			url:'http://api.open-notify.org/astros.json',
 			success:(data)=>{
 				console.log(data);
-				let allPeople=data.people
+				let allPeople=data.people;
 
-		    	for(people of allPeople){
+		    	for(person of allPeople){
 		    		let tempRow=  `<div class="row">
-		    	                   <div class="col">${people.name}</div>
-		    	                   <div class="col"> ${people.craft}</div>
+		    	                   <div class="col">${person.name}</div>
+		    	                   <div class="col"> ${person.craft}</div>
 		    	                   </div>`
 		    	
-		    $(".showData").append(tempRow);
+		    $("#showData").append(tempRow);
 		    }  // End of for loop
 	        }, ///End of succes
-		    error: (data)=>{
-		    	alert("Some Error occured...!!!")
+		    error: (err)=>{
+		    	alert("Some Error occured...!!!");
+		    	// alert(err.responseJSON.error.message);
 		    }
     }); //End of ajax
 } // END OF getAllData
